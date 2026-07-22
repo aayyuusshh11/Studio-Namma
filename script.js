@@ -1,5 +1,6 @@
 let card = document.querySelector(".cardfollower")
 
+
 if (card) {
     card.style.transition = "top 0.18s linear, left 0.18s linear";
     document.addEventListener("mousemove", (e) => {
@@ -12,7 +13,7 @@ if (card) {
 let menudiv = document.querySelector(".menu")
 let click = document.querySelector("#menuClick")
 let flag = 0;
-// let texts = document.querySelector(".texts")
+
 let button = document.querySelector(".btn1")
 const texts = document.querySelector(".texts");
 
@@ -37,20 +38,19 @@ click.addEventListener("click", () => {
         flag = 0;
         texts.style.opacity = 0;
     }
-
-    
-    
 })
 
+const videos = document.querySelectorAll(".my-video");
 
+videos.forEach((video) => {
+    video.addEventListener("mouseenter", () => {
+        video.play();
+    });
 
+    video.addEventListener("mouseleave", () => {
+        video.pause();
+        video.currentTime = 0;
+    });
+});
 
-// let texts = document.querySelector(".texts h1")
-// let button = document.querySelector(".btn1")
-
-// button.addEventListener("click",()=>{
-//     texts.style.bottom = "40%";
-//     texts.style.opacity = 1;
-//     texts.style.transition = "all 0.5s ease-out";
-// })
 

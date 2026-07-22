@@ -136,6 +136,8 @@ html, body {
     margin-top: 1.5rem;
 }
 .prj {
+    overflow: hidden;
+    cursor: pointer;
     display: flex;
     gap: 1.5rem;
     align-items: stretch;
@@ -245,3 +247,10 @@ html, body {
     font-size: 150px;
 
 }
+
+.my-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
